@@ -5,20 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mareine - Création de sites web</title>
+    <title>Honorius Services - Création de sites web</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            text-align: center;
             margin: 0;
-            color: #333;
+            font-family: Arial, sans-serif;
+            background: #f5f3ff;
+            color: #222;
         }
 
         nav {
-            background-color: #6c2bd9;
-            padding: 15px;
+            background: #6c2bd9;
+            padding: 16px 10px;
+            text-align: center;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -27,76 +32,133 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 8px;
             font-weight: bold;
+            font-size: 14px;
         }
 
-        header {
-            padding: 60px 20px;
-            background-color: white;
+        nav a:hover {
+            text-decoration: underline;
         }
 
-        h1 {
+        .hero {
+            background: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
             color: #6c2bd9;
-            font-size: 38px;
+            font-size: 42px;
+            margin-bottom: 15px;
         }
 
-        h2 {
-            color: #6c2bd9;
-            margin-top: 40px;
+        .hero h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
         }
 
-        h3 {
-            color: #333;
-        }
-
-        p {
+        .hero p {
+            max-width: 700px;
+            margin: auto;
             font-size: 18px;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         .bouton {
             display: inline-block;
-            background-color: #25D366;
-            color: white;
-            text-decoration: none;
+            margin-top: 25px;
             padding: 15px 25px;
             border-radius: 30px;
-            font-size: 16px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
             font-weight: bold;
-            margin-top: 15px;
+        }
+
+        .bouton:hover {
+            background: #1ebe5d;
         }
 
         section {
-            padding: 30px 20px;
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
+            padding: 60px 20px;
+            text-align: center;
         }
 
-        .service {
-            background-color: white;
-            padding: 20px;
-            margin: 15px 0;
+        section h2 {
+            color: #6c2bd9;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        section p {
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .cartes {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .carte {
+            background: white;
+            padding: 25px;
             border-radius: 15px;
-            box-shadow: 0 3px 10px #cccccc;
-            font-size: 18px;
+            box-shadow: 0 4px 12px #ddd;
+        }
+
+        .carte h3 {
+            color: #6c2bd9;
+        }
+
+        .prix {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .whatsapp-fixe {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background: #25D366;
+            color: white;
+            padding: 15px 18px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 12px #999;
+            z-index: 2000;
         }
 
         footer {
-            background-color: #222;
+            background: #222;
             color: white;
-            padding: 20px;
-            margin-top: 30px;
+            text-align: center;
+            padding: 30px 20px;
         }
 
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 28px;
+        @media (max-width: 700px) {
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero h2 {
+                font-size: 20px;
+            }
+
+            .cartes {
+                grid-template-columns: 1fr;
             }
 
             nav a {
-                margin: 0 5px;
-                font-size: 14px;
+                margin: 0 4px;
+                font-size: 12px;
             }
         }
     </style>
@@ -105,6 +167,7 @@
 
 <body>
 
+    <!-- MENU -->
     <nav>
         <a href="#accueil">Accueil</a>
         <a href="#apropos">À propos</a>
@@ -113,120 +176,196 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <header id="accueil">
-        <h1>Bienvenue sur mon site</h1>
+
+    <!-- ACCUEIL -->
+    <header class="hero" id="accueil">
+
+        <h1>Honorius Services</h1>
+
+        <h2>Création de sites web modernes</h2>
 
         <p>
-            Je m'appelle Mareine et j'apprends le développement web.
-        </p>
-
-        <p>
-            Je crée des sites web simples, modernes et adaptés aux téléphones.
+            Nous créons des sites web modernes, simples,
+            rapides et adaptés aux téléphones.
         </p>
 
         <a class="bouton"
            href="https://wa.me/2290128048581"
            target="_blank">
-            💬 Me contacter sur WhatsApp
+            💬 Commander sur WhatsApp
         </a>
+
     </header>
 
+
+    <!-- À PROPOS -->
     <section id="apropos">
-        <h2>👤 À propos de moi</h2>
+
+        <h2>👤 À propos</h2>
 
         <p>
-            Je m'appelle Mareine. Je suis actuellement en train
-            d'apprendre le développement web et j'aime créer
-            des sites simples et modernes.
+            Bienvenue chez <strong>Honorius Services</strong>.
         </p>
-    </section>
-
-    <section id="services">
-        <h2>💼 Mes services</h2>
-
-        <div class="service">
-            🌐 Création de sites web
-        </div>
-
-        <div class="service">
-            📱 Création de pages adaptées aux téléphones
-        </div>
-
-        <div class="service">
-            🎨 Design de sites modernes
-        </div>
-    </section>
-
-    <section id="offres">
-        <h2>💰 Mes offres</h2>
-
-        <div class="service">
-            <h3>🌐 Site vitrine</h3>
-
-            <p>
-                Un site professionnel pour présenter votre activité.
-            </p>
-
-            <h3>À partir de 50 000 FCFA</h3>
-
-            <a class="bouton"
-               href="https://wa.me/2290128048581"
-               target="_blank">
-                💬 Commander sur WhatsApp
-            </a>
-        </div>
-
-        <div class="service">
-            <h3>📱 Page web mobile</h3>
-
-            <p>
-                Une page web moderne et adaptée aux téléphones.
-            </p>
-
-            <h3>À partir de 30 000 FCFA</h3>
-
-            <a class="bouton"
-               href="https://wa.me/2290128048581"
-               target="_blank">
-                💬 Commander sur WhatsApp
-            </a>
-        </div>
-
-        <div class="service">
-            <h3>🎨 Design personnalisé</h3>
-
-            <p>
-                Un design moderne créé selon vos besoins.
-            </p>
-
-            <h3>À partir de 40 000 FCFA</h3>
-
-            <a class="bouton"
-               href="https://wa.me/2290128048581"
-               target="_blank">
-                💬 Commander sur WhatsApp
-            </a>
-        </div>
-
-    </section>
-
-    <section id="contact">
-        <h2>📞 Contact</h2>
 
         <p>
-            Tu veux créer un site web ?
-            Contacte-moi directement sur WhatsApp.
+            Nous proposons des solutions web adaptées aux
+            particuliers, entrepreneurs et petites entreprises
+            qui souhaitent développer leur présence sur Internet.
+        </p>
+
+    </section>
+
+
+    <!-- SERVICES -->
+    <section id="services">
+
+        <h2>💼 Nos services</h2>
+
+        <div class="cartes">
+
+            <div class="carte">
+                <h3>🌐 Site web</h3>
+
+                <p>
+                    Création de sites modernes pour présenter
+                    votre activité ou votre entreprise.
+                </p>
+            </div>
+
+            <div class="carte">
+                <h3>📱 Page mobile</h3>
+
+                <p>
+                    Création de pages web adaptées parfaitement
+                    aux téléphones.
+                </p>
+            </div>
+
+            <div class="carte">
+                <h3>🎨 Design web</h3>
+
+                <p>
+                    Création d'un design moderne et personnalisé
+                    selon vos besoins.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- OFFRES -->
+    <section id="offres">
+
+        <h2>💰 Nos offres</h2>
+
+        <div class="cartes">
+
+            <div class="carte">
+
+                <h3>🌐 Site vitrine</h3>
+
+                <p>
+                    Un site professionnel pour présenter
+                    votre activité.
+                </p>
+
+                <div class="prix">
+                    À partir de 50 000 FCFA
+                </div>
+
+                <a class="bouton"
+                   href="https://wa.me/2290128048581"
+                   target="_blank">
+                    Commander
+                </a>
+
+            </div>
+
+
+            <div class="carte">
+
+                <h3>📱 Page web mobile</h3>
+
+                <p>
+                    Une page web moderne et adaptée
+                    aux téléphones.
+                </p>
+
+                <div class="prix">
+                    À partir de 30 000 FCFA
+                </div>
+
+                <a class="bouton"
+                   href="https://wa.me/2290128048581"
+                   target="_blank">
+                    Commander
+                </a>
+
+            </div>
+
+
+            <div class="carte">
+
+                <h3>🎨 Design personnalisé</h3>
+
+                <p>
+                    Un design moderne créé selon
+                    vos besoins.
+                </p>
+
+                <div class="prix">
+                    À partir de 40 000 FCFA
+                </div>
+
+                <a class="bouton"
+                   href="https://wa.me/2290128048581"
+                   target="_blank">
+                    Commander
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <h2>📞 Contactez-nous</h2>
+
+        <p>
+            Vous souhaitez créer un site web ?
+            Contactez Honorius Services directement sur WhatsApp.
         </p>
 
         <a class="bouton"
            href="https://wa.me/2290128048581"
            target="_blank">
-            💬 Discuter sur WhatsApp
+            💬 Nous contacter
         </a>
+
     </section>
 
+
+    <!-- BOUTON WHATSAPP FIXE -->
+    <a class="whatsapp-fixe"
+       href="https://wa.me/2290128048581"
+       target="_blank">
+        💬 WhatsApp
+    </a>
+
+
+    <!-- PIED DE PAGE -->
     <footer>
-        <p>© 2026 Mareine - Tous droits réservés.</p>
+
+        <p>
+            © 2026 Honorius Services - Tous droits réservés.
+        </p>
+
     </footer>
 
 </body>

@@ -2,35 +2,73 @@
 <html lang="fr">
 
 <head>
-    <meta name="google-site-verification" content="uHfvs5NcTdpc3Iq4OMWY8qBrjEGoZYUqL-APx5nTztA" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Honorius Services | Création de sites web professionnels</title>
-<meta name="description" content="Honorius Services crée des sites web professionnels, modernes, rapides et adaptés aux téléphones pour les entreprises, commerces et entrepreneurs partout dans le monde.">
+    <title>Honorius Services | Création de sites web au Bénin</title>
+
+    <meta name="description" content="Honorius Services accompagne les commerçants, entrepreneurs, restaurateurs et particuliers au Bénin dans la création de sites web modernes et professionnels.">
+
+    <meta name="theme-color" content="#0b1633">
+
     <style>
         * {
             box-sizing: border-box;
             scroll-behavior: smooth;
         }
 
-body  
-     {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #f5f3ff, #e0e7ff);
-    color: #222;
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f8ff;
+            color: #263247;
+            line-height: 1.6;
+        }
 
-nav {
-    background: linear-gradient(135deg, #0b1633, #0077ff);
-    padding: 18px 10px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-}
+        /* EN-TÊTE ET LOGO */
+
+        .entete {
+            background: #0b1633;
+            padding: 22px 15px;
+            text-align: center;
+        }
+
+        .logo {
+            color: #00cfff;
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: white;
+        }
+
+        .slogan-logo {
+            color: white;
+            font-size: 13px;
+            letter-spacing: 3px;
+            margin: 3px 0;
+        }
+
+        .specialite-logo {
+            color: #00cfff;
+            font-size: 12px;
+            margin: 5px 0 0;
+        }
+
+        /* MENU */
+
+        nav {
+            background: linear-gradient(135deg, #0b1633, #0077ff);
+            padding: 15px 8px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
 
         nav a {
             color: white;
@@ -41,115 +79,164 @@ nav {
         }
 
         nav a:hover {
-            text-decoration: underline;
+            color: #00cfff;
         }
+
+        /* ACCUEIL */
 
         .hero {
-            background: white;
+            background: linear-gradient(135deg, #ffffff, #eaf4ff);
             text-align: center;
-            padding: 80px 20px;
+            padding: 75px 20px;
         }
 
-.hero h1 {
-    background: linear-gradient(135deg, #6c2bd9, #2563eb);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 46px;
-    font-weight: 800;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
-
-        .hero h2 {
-            font-size: 24px;
+        .hero h1 {
+            color: #0b1633;
+            font-size: 42px;
+            line-height: 1.2;
             margin-bottom: 20px;
         }
 
-        .hero p {
-            max-width: 700px;
-            margin: auto;
-            font-size: 18px;
-            line-height: 1.7;
+        .hero h2 {
+            color: #0077ff;
+            font-size: 25px;
+            margin-bottom: 20px;
         }
 
-.bouton {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 15px 28px;
-    border-radius: 50px;
-    background: linear-gradient(135deg, #25D366, #128C7E);
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+        .hero > p {
+            max-width: 800px;
+            margin: 18px auto;
+            font-size: 17px;
+            line-height: 1.8;
+        }
 
-.bouton:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 22px rgba(37, 211, 102, 0.4);
-}
+        .accent {
+            color: #0077ff;
+        }
+
+        .avantages {
+            max-width: 620px;
+            margin: 25px auto;
+            text-align: left;
+            background: white;
+            padding: 15px 22px;
+            border-radius: 15px;
+            border: 1px solid #dbeafe;
+            box-shadow: 0 5px 20px rgba(11, 22, 51, 0.06);
+        }
+
+        .avantages p {
+            margin: 12px 0;
+            font-size: 16px;
+        }
+
+        /* BOUTONS */
+
+        .bouton {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 14px 24px;
+            border-radius: 50px;
+            background: linear-gradient(135deg, #0077ff, #0052cc);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 6px 15px rgba(0, 119, 255, 0.2);
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
 
         .bouton:hover {
-            background: #1ebe5d;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 22px rgba(0, 119, 255, 0.3);
         }
 
+        /* SECTIONS */
+
         section {
-            max-width: 900px;
+            max-width: 1100px;
             margin: auto;
             padding: 60px 20px;
             text-align: center;
         }
 
-    section h2 {
-color: #0b1633;
-font-size: 30px;
-margin-bottom: 30px;
-    }
+        section h2 {
+            color: #0b1633;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
 
         section p {
-            font-size: 17px;
-            line-height: 1.7;
+            font-size: 16px;
+            line-height: 1.8;
         }
+
+        .introduction {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* CARTES DE SERVICES */
 
         .cartes {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+            gap: 22px;
+            margin-top: 30px;
         }
 
-.carte {
-    background: white;
-    padding: 30px 25px;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(11, 22, 51, 0.12);
-    border: 1px solid #dbeafe;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+        .carte {
+            background: white;
+            padding: 28px 22px;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(11, 22, 51, 0.12);
+            border: 1px solid #dbeafe;
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
 
-.carte:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0, 119, 255, 0.2);
-}
+        .carte:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0, 119, 255, 0.2);
+        }
 
         .carte h3 {
-    color: #0077ff;
+            color: #0077ff;
+            font-size: 21px;
         }
 
-        .prix {
-            font-size: 22px;
-            font-weight: bold;
-            margin: 20px 0;
+        .carte p {
+            font-size: 16px;
         }
+
+        /* RÉALISATIONS */
+
+        #realisations {
+            background: white;
+            border-radius: 18px;
+        }
+
+        /* CONTACT */
+
+        #contact {
+            background: #eaf4ff;
+            max-width: 100%;
+        }
+
+        .contact-interieur {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* BOUTON WHATSAPP FIXE */
 
         .whatsapp-fixe {
             position: fixed;
-            right: 20px;
-            bottom: 20px;
+            right: 18px;
+            bottom: 18px;
             background: #25D366;
             color: white;
-            padding: 15px 18px;
+            padding: 14px 18px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
@@ -157,263 +244,245 @@ margin-bottom: 30px;
             z-index: 2000;
         }
 
-        footer {
-    background: #0b1633;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
+        .whatsapp-fixe:hover {
+            background: #1ebe5d;
         }
 
-    @media (max-width: 700px) {
+        /* PIED DE PAGE */
 
-    .hero h1 {
-        font-size: 32px;
-    }
+        footer {
+            background: #0b1633;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
 
-    .hero h2 {
-        font-size: 20px;
-    }
+        footer p {
+            margin: 5px;
+        }
 
-    .cartes {
-        grid-template-columns: 1fr;
-    }
+        .footer-accent {
+            color: #00cfff;
+        }
 
-    nav {
-        padding: 12px 5px;
-    }
+        /* ADAPTATION AUX TÉLÉPHONES */
 
-    nav a {
-        display: inline-block;
-        margin: 6px 4px;
-        font-size: 13px;
-    }
+        @media (max-width: 700px) {
 
-    }
+            .logo {
+                font-size: 26px;
+            }
+
+            nav {
+                padding: 12px 5px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 6px;
+                font-size: 13px;
+            }
+
+            .hero {
+                padding: 55px 16px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+
+            .hero > p {
+                font-size: 16px;
+            }
+
+            .avantages {
+                padding: 12px 15px;
+            }
+
+            .avantages p {
+                font-size: 15px;
+            }
+
+            section {
+                padding: 45px 16px;
+            }
+
+            section h2 {
+                font-size: 26px;
+            }
+
+            .cartes {
+                grid-template-columns: 1fr;
+            }
+
+            .whatsapp-fixe {
+                right: 12px;
+                bottom: 12px;
+                padding: 12px 15px;
+                font-size: 14px;
+            }
+        }
     </style>
-
 </head>
 
 <body>
-    <header style="background:#0b1633;padding:20px;text-align:center;">
-  <h2 style="color:#00cfff;margin:0;font-family:Arial,sans-serif;">
-    H<span style="color:white;">ONORIUS</span>
-  </h2>
-  <p style="color:white;margin:5px 0 0;font-size:14px;letter-spacing:3px;">
-    SERVICES
-  </p>
-  <p style="color:#00cfff;margin:8px 0 0;font-size:12px;">
-    Web Design • Web Development
-  </p>
-</header>
+
+    <!-- LOGO -->
+
+    <div class="entete">
+
+        <p class="logo">
+            H<span>ONORIUS</span>
+        </p>
+
+        <p class="slogan-logo">SERVICES</p>
+
+        <p class="specialite-logo">
+            Web Design • Web Development
+        </p>
+
+    </div>
 
     <!-- MENU -->
+
     <nav>
         <a href="#accueil">Accueil</a>
         <a href="#apropos">À propos</a>
         <a href="#services">Services</a>
-        <a href="#realisations">Nos réalisations</a>
-        <a href="#offres">Offres</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#offres">Nos solutions</a>
         <a href="#contact">Contact</a>
     </nav>
 
+    <!-- PAGE D'ACCUEIL -->
 
-    <!-- ACCUEIL -->
     <header class="hero" id="accueil">
 
-        <h1>Honorius Services</h1>
+        <h1>HONORIUS SERVICES</h1>
 
-        <h2>Création de sites web modernes</h2>
+        <h2>Donnez vie à votre activité sur Internet !</h2>
 
         <p>
-            Honorius Services, spécialiste de la création de sites web au Bénin, accompagne les entreprises, les commerces et les entrepreneurs avec des sites modernes, rapides et adaptés aux téléphones.
+            Vous êtes commerçant, entrepreneur, restaurateur ou
+            particulier au Bénin ? Honorius Services vous accompagne
+            dans la création de sites web modernes, professionnels
+            et adaptés à vos besoins.
+        </p>
+
+        <div class="avantages">
+
+            <p>✅ Création de sites web professionnels</p>
+
+            <p>✅ Pages web adaptées aux téléphones</p>
+
+            <p>✅ Design personnalisé</p>
+
+            <p>✅ Solutions adaptées à votre activité</p>
+
+            <p>✅ Contact direct sur WhatsApp</p>
+
+        </div>
+
+        <p>
+            <strong>
+                Vous avez un projet ? Contactez-nous pour obtenir
+                une offre adaptée à vos besoins !
+            </strong>
+        </p>
+
+        <p>
+            📲 Écrivez-nous sur WhatsApp pour discuter de votre projet.
         </p>
 
         <a class="bouton"
            href="https://wa.me/2290128048581"
-           target="_blank">
-            💬 Commander sur WhatsApp
+           target="_blank"
+           rel="noopener noreferrer">
+            💬 Nous contacter sur WhatsApp
         </a>
 
     </header>
 
-
     <!-- À PROPOS -->
+
     <section id="apropos">
 
-        <h2>👤 À propos</h2>
+        <h2>👋 À propos de Honorius Services</h2>
 
-        <p>
-            Bienvenue chez <strong>Honorius Services</strong>.
-        </p>
+        <div class="introduction">
 
-        <p>
-            Nous proposons des solutions web adaptées aux
-            particuliers, entrepreneurs et petites entreprises
-            qui souhaitent développer leur présence sur Internet.
-        </p>
+            <p>
+                Honorius Services accompagne les commerçants,
+                les entrepreneurs, les restaurants et les particuliers
+                qui souhaitent présenter leur activité sur Internet.
+            </p>
+
+            <p>
+                Nous proposons des solutions web adaptées aux besoins
+                de chaque projet, avec une présentation moderne,
+                une navigation simple et un affichage adapté
+                aux téléphones.
+            </p>
+
+            <p>
+                Notre objectif est de vous aider à mieux présenter
+                vos activités et à faciliter les échanges avec
+                vos clients.
+            </p>
+
+        </div>
 
     </section>
 
-
     <!-- SERVICES -->
+
     <section id="services">
 
         <h2>💼 Nos services</h2>
 
-        <div class="cartes">
-
-            <div class="carte">
-                <h3>🌐 Site web</h3>
-
-                <p>
-                    Création de sites modernes pour présenter
-                    votre activité ou votre entreprise.
-                </p>
-            </div>
-
-            <div class="carte">
-                <h3>📱 Page mobile</h3>
-
-                <p>
-                    Création de pages web adaptées parfaitement
-                    aux téléphones.
-                </p>
-            </div>
-
-            <div class="carte">
-                <h3>🎨 Design web</h3>
-
-                <p>
-                    Création d'un design moderne et personnalisé
-                    selon vos besoins.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-<!-- NOS RÉALISATIONS -->
-<section id="realisations">
-
-    <h2>🖥️ Nos réalisations</h2>
-
-    <p>
-        Découvrez quelques exemples de sites web
-        que Honorius Services peut créer pour vous.
-    </p>
-
-    <div class="cartes">
-
-        <div class="carte">
-            <h3>🛍️ Site commercial</h3>
-            <p>
-                Un site pour présenter vos produits,
-                afficher vos prix et attirer des clients.
-            </p>
-            <p><strong>Exemple de démonstration</strong></p>
-        </div>
-
-        <div class="carte">
-            <h3>🏢 Site d'entreprise</h3>
-            <p>
-                Un site professionnel pour présenter
-                votre entreprise et vos services.
-            </p>
-            <p><strong>Exemple de démonstration</strong></p>
-        </div>
-
-        <div class="carte">
-            <h3>🍔 Site de restaurant</h3>
-            <p>
-                Un site pour présenter vos menus,
-                vos tarifs et vos coordonnées.
-            </p>
-            <p><strong>Exemple de démonstration</strong></p>
-        </div>
-
-    </div>
-
-    <a class="bouton"
-       href="https://wa.me/2290128048581?text=Bonjour%20Honorius%20Services%2C%20je%20souhaite%20un%20site%20web."
-       target="_blank"
-       rel="noopener">
-        💬 Créer mon site web
-    </a>
-
-</section>
-
-    <!-- OFFRES -->
-    <section id="offres">
-
-        <h2>💰 Nos offres</h2>
+        <p class="introduction">
+            Découvrez nos solutions pour présenter votre activité
+            et mieux communiquer avec vos clients.
+        </p>
 
         <div class="cartes">
 
             <div class="carte">
 
-                <h3>🌐 Site vitrine</h3>
+                <h3>🌐 Site web professionnel</h3>
 
                 <p>
-                    Un site professionnel pour présenter
-                    votre activité.
+                    Présentez votre entreprise, votre commerce,
+                    vos produits ou vos services grâce à un site web
+                    moderne et professionnel.
                 </p>
 
-                <div class="prix">
-                    À partir de 50 000 FCFA
-                </div>
-
-                <a class="bouton"
-   href="https://wa.me/2290128048581?text=Bonjour%20Honorius%20Services%20!%20Je%20souhaite%20commander%20un%20site%20vitrine%20%C3%A0%20partir%20de%2050%20000%20FCFA."
-   target="_blank"
-   rel="noopener">
-    Commander
-                </a>
-
             </div>
-
 
             <div class="carte">
 
                 <h3>📱 Page web mobile</h3>
 
                 <p>
-                    Une page web moderne et adaptée
-                    aux téléphones.
+                    Une page web adaptée aux téléphones pour permettre
+                    à vos visiteurs de retrouver facilement
+                    vos informations.
                 </p>
 
-                <div class="prix">
-                    À partir de 30 000 FCFA
-                </div>
-
-        <a class="bouton"
-   href="https://wa.me/2290128048581?text=Bonjour%20Honorius%20Services%20!%20Je%20souhaite%20commander%20une%20page%20web%20mobile%20a%20partir%20de%2030%20000%20FCFA."
-   target="_blank"
-   rel="noopener">
-    Commander
-        </a>
-
             </div>
-
 
             <div class="carte">
 
                 <h3>🎨 Design personnalisé</h3>
 
                 <p>
-                    Un design moderne créé selon
-                    vos besoins.
+                    Une présentation visuelle adaptée à votre activité,
+                    à votre identité et à vos préférences.
                 </p>
-
-                <div class="prix">
-                    À partir de 40 000 FCFA
-                </div>
-
-<a class="bouton"
-   href="https://wa.me/2290128048581?text=Bonjour%20Honorius%20Services%20!%20Je%20souhaite%20commander%20un%20design%20personnalise%20a%20partir%20de%2040%20000%20FCFA."
-   target="_blank"
-   rel="noopener">
-    Commander
-</a>
 
             </div>
 
@@ -421,43 +490,170 @@ margin-bottom: 30px;
 
     </section>
 
+    <!-- RÉALISATIONS ET EXEMPLES -->
 
-    <!-- CONTACT -->
-    <section id="contact">
+    <section id="realisations">
 
-        <h2>📞 Contactez-nous</h2>
+        <h2>🖥️ Nos solutions pour votre activité</h2>
 
-        <p>
-            Vous souhaitez créer un site web ?
-            Contactez Honorius Services directement sur WhatsApp.
+        <p class="introduction">
+            Chaque projet est différent. Nous pouvons vous accompagner
+            selon votre activité et vos objectifs.
+        </p>
+
+        <div class="cartes">
+
+            <div class="carte">
+
+                <h3>🛍️ Commerçants et boutiques</h3>
+
+                <p>
+                    Présentez votre boutique, vos produits,
+                    vos coordonnées et vos informations pratiques.
+                </p>
+
+            </div>
+
+            <div class="carte">
+
+                <h3>🏢 Entreprises et entrepreneurs</h3>
+
+                <p>
+                    Présentez votre entreprise, vos activités,
+                    vos services et vos informations professionnelles.
+                </p>
+
+            </div>
+
+            <div class="carte">
+
+                <h3>🍽️ Restaurants</h3>
+
+                <p>
+                    Faites découvrir votre restaurant,
+                    vos menus et les moyens de vous contacter.
+                </p>
+
+            </div>
+
+            <div class="carte">
+
+                <h3>👤 Particuliers</h3>
+
+                <p>
+                    Présentez vos compétences, votre parcours,
+                    vos projets ou vos réalisations personnelles.
+                </p>
+
+            </div>
+
+            <div class="carte">
+
+                <h3>📢 Pages de présentation</h3>
+
+                <p>
+                    Regroupez les informations essentielles
+                    de votre activité sur une page web claire.
+                </p>
+
+            </div>
+
+            <div class="carte">
+
+                <h3>📲 Pages de contact</h3>
+
+                <p>
+                    Facilitez les échanges avec vos visiteurs
+                    grâce à vos coordonnées et à WhatsApp.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- NOS SOLUTIONS -->
+
+    <section id="offres">
+
+        <h2>✨ Une solution adaptée à votre projet</h2>
+
+        <p class="introduction">
+            Vous avez une idée, un commerce, une entreprise
+            ou un projet personnel à présenter sur Internet ?
+        </p>
+
+        <p class="introduction">
+            Contactez-nous pour expliquer vos besoins.
+            Nous échangerons avec vous afin de mieux comprendre
+            votre projet et de discuter d'une offre adaptée.
         </p>
 
         <a class="bouton"
            href="https://wa.me/2290128048581"
-           target="_blank">
-            💬 Nous contacter
+           target="_blank"
+           rel="noopener noreferrer">
+            💬 Demander des informations
         </a>
 
     </section>
 
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <div class="contact-interieur">
+
+            <h2>📞 Contactez-nous</h2>
+
+            <p>
+                Vous souhaitez créer un site web pour votre boutique,
+                votre entreprise, votre restaurant ou votre projet
+                personnel ?
+            </p>
+
+            <p>
+                Écrivez-nous sur WhatsApp pour nous expliquer
+                votre besoin. Nous pourrons échanger sur votre projet
+                et les possibilités de réalisation.
+            </p>
+
+            <a class="bouton"
+               href="https://wa.me/2290128048581"
+               target="_blank"
+               rel="noopener noreferrer">
+                💬 Nous contacter sur WhatsApp
+            </a>
+
+        </div>
+
+    </section>
 
     <!-- BOUTON WHATSAPP FIXE -->
+
     <a class="whatsapp-fixe"
        href="https://wa.me/2290128048581"
-       target="_blank">
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contacter Honorius Services sur WhatsApp">
         💬 WhatsApp
     </a>
 
-
     <!-- PIED DE PAGE -->
+
     <footer>
 
         <p>
-            © 2026 Honorius Services - Tous droits réservés.
+            © 2026 <span class="footer-accent">Honorius Services</span>
         </p>
+
+        <p>Tous droits réservés.</p>
+
+        <p>Création de sites web au Bénin.</p>
 
     </footer>
 
 </body>
 
-</html>
+    </html>

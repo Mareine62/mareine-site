@@ -104,12 +104,19 @@ body {
             gap: 20px;
         }
 
-        .carte {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px #ddd;
-        }
+.carte {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(108, 43, 217, 0.12);
+    border: 1px solid #eee5ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carte:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(108, 43, 217, 0.2);
+}
 
         .carte h3 {
             color: #6c2bd9;
